@@ -1,10 +1,16 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
-  "engines": {
-    "node": "16.15.0"
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node seeds/seed.js",
+    "watch": "nodemon server.js"
   },
-  "private": true,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "@apollo/client": "^3.6.9",
     "@emailjs/browser": "^3.7.0",
@@ -32,27 +38,8 @@
     "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },
-  "scripts": {
-    "start": "node server.js",
-    "seed": "node seeds/seed.js",
-    "watch": "nodemon server.js"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@faker-js/faker": "^7.5.0",
+    "nodemon": "^2.0.19"
   }
 }
